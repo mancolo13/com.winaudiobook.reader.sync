@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.library_books_outlined),
-          selectedIcon: const Icon(Icons.library_books, color: AppTheme.primaryColor),
-          label: 'Library',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.play_circle_outline),
-          selectedIcon: const Icon(Icons.play_circle, color: AppTheme.primaryColor),
-          label: 'Player',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.bookmark_border),
-          selectedIcon: const Icon(Icons.bookmark, color: AppTheme.primaryColor),
-          label: 'Bookmarks',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.bedtime_outlined),
-          selectedIcon: const Icon(Icons.bedtime, color: AppTheme.primaryColor),
-          label: 'Sleep',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Player',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Bookshelf',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Bookmarks',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'Stats',
+          ),
         ],
       ),
     );
